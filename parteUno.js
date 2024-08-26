@@ -34,3 +34,20 @@ function makePersonObject(id, name, email) {
 
 const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com');
 console.log(person);
+
+// Challenge `getName`
+function makePersonObject(id, name, email) {
+  return {
+    id: id,
+    name: name,
+    email: email,
+  };
+}
+
+function getName(object) {
+  return `Hola, mi nombre es ${object.name}`;
+}
+
+const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com');
+console.log(person);
+console.log(getName(person));
