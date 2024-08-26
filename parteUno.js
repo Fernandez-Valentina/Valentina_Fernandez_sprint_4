@@ -35,20 +35,7 @@ function makePersonObject(id, name, email) {
 const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com');
 console.log(person);
 
-/**
- * ### Challenge `getName`
- *
- * @instrucciones
- * Esta función toma como único argumento
- * un objeto que contiene una propiedad `name`,
- * y devuelve una cadena que dice `Hola, mi nombre es {name}`,
- * donde `{nombre}` es el nombre almacenado en el objeto.
- *
- * Por ejemplo, si invocamos a `getName
- * pasando { id: 1, name: 'Alguien', email: 'alguien@alguien.com` } como argumento,
- * el valor devuelto debería parecerse a `Hola, mi nombre es Alguien`.
- */
-
+// Challenge `getName`
 function makePersonObject(id, name, email) {
   return {
     id: id,
