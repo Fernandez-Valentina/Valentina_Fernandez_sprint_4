@@ -50,7 +50,7 @@ function getName(object) {
 const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com'); 
 console.log(person);
 console.log(getName(person));
-/*Me da un error en la linea 35 y en la linea 51 porque no puedo redeclarar la variable persona,
+/*Me da un error en la linea 35 y en la linea 51 porque no puedo redeclarar la variable 'persona',
  pero no supe como hacerlo sin juntar los ejercicios*/
 
 //###Challenge `appleIndex`
@@ -60,3 +60,10 @@ function appleIndex(array) {
 
 console.log(appleIndex(['naranja', 'uva', 'manzana', 'plátano', 'mango']));
 
+
+// ### Challenge `isItAnApple`
+function isItAnApple(array) {
+  return array.map(element => element === 'apple');
+}
+
+console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
