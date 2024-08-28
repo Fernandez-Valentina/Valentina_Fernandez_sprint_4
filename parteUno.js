@@ -1,13 +1,13 @@
-// CHALLENGE `sayGoodbye`
+//###CHALLENGE `sayGoodbye`
 function sayGoodbye(name) {
     return `Adiós, ${name}. Que tengas un buen día!`;
 }
 
 console.log(sayGoodbye ('Andy'));
 
-// CHALLENGE `temperatureInC`
+// ###CHALLENGE `temperatureInC`
 // Profe, los valores de la letra del ejercicio no coinciden con los valores reales al hacer los cálculos, 
-// espero que solo sean como ejemplo y la function esté bien. O tal vez entendí mal lo que habia que hacer?
+// espero que solo sean como ejemplo y la function esté bien. O tal vez entendí mal lo que había que hacer?
 function temperatureInC(temperature, unit) {
     let convertedTemperature;
     
@@ -23,7 +23,7 @@ function temperatureInC(temperature, unit) {
 console.log(temperatureInC(88, 'F'));
 console.log(temperatureInC(24, 'C'));
 
-// Challenge `makePersonObject`
+// ###Challenge `makePersonObject`
 function makePersonObject(id, name, email) {
   return {
     id: id,
@@ -35,7 +35,7 @@ function makePersonObject(id, name, email) {
 const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com');
 console.log(person);
 
-// Challenge `getName`
+// ###Challenge `getName`
 function makePersonObject(id, name, email) {
   return {
     id: id,
@@ -43,11 +43,20 @@ function makePersonObject(id, name, email) {
     email: email,
   };
 }
-
 function getName(object) {
   return `Hola, mi nombre es ${object.name}`;
 }
 
-const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com');
+const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com'); 
 console.log(person);
 console.log(getName(person));
+/*Me da un error en la linea 35 y en la linea 51 porque no puedo redeclarar la variable persona,
+ pero no supe como hacerlo sin juntar los ejercicios*/
+
+//###Challenge `appleIndex`
+function appleIndex(array) {
+  return array.indexOf('manzana');
+}
+
+console.log(appleIndex(['naranja', 'uva', 'manzana', 'plátano', 'mango']));
+
