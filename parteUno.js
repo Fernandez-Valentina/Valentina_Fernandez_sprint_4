@@ -8,6 +8,7 @@ console.log(sayGoodbye ('Andy'));
 // CHALLENGE `temperatureInC`
 // Profe, los valores de la letra del ejercicio creo que no coinciden con los valores reales al hacer los cálculos, 
 // espero que solo sean como ejemplo y la function esté bien. O tal vez entendí mal lo que había que hacer.
+
 function temperatureInC(temperature, unit) {
     let convertedTemperature;
     
@@ -17,6 +18,12 @@ function temperatureInC(temperature, unit) {
     } else if (unit === 'C') {
       convertedTemperature = (temperature * 9 / 5) + 32; // Convierte de Celsius a Fahrenheit
       return `${Math.round(convertedTemperature)}F`; // Redondea al entero mas cercano
+
+      convertedTemperature = (temperature - 32) * 5 / 9; // Convierte de Fahrenheit a Celsius
+      return `${Math.round(convertedTemperature)}C`;
+    } else if (unit === 'C') {
+      convertedTemperature = (temperature * 9 / 5) + 32; // Convierte de Celsius a Fahrenheit
+      return `${Math.round(convertedTemperature)}F`; // Redondea
     }
 }
 
@@ -57,8 +64,9 @@ console.log(getName(person));
 function appleIndex(fruitArray) {
   return fruitArray.indexOf('manzana');
 }
+const fruits = ['naranja', 'uva', 'manzana', 'plátano', 'mango'];
 
-console.log(appleIndex(['naranja', 'uva', 'manzana', 'plátano', 'mango']));
+console.log(appleIndex(fruits));
 
 //Challenge `isItAnApple`
 function isItAnApple(fruitList) {

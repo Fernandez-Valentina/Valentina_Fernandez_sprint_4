@@ -29,24 +29,30 @@ const characters = [
     },
 ];
 
-// // // // 1 Obtener caracteres con masa superior a 100
-const massGreaterThan100 = characters.filter((c) => c.mass > 100);
-console.log(massGreaterThan100);
+// 1 Obtener caracteres con masa superior a 100
+const MASS_THRESHOLD = 100;
+const massGreaterThanThreshold = characters.filter((c) => c.mass > MASS_THRESHOLD);
 
-// // // 2 Obtener personajes con altura inferior a 200
-const heightLessThan200 = characters.filter((c) => c.height < 200);
-console.log(heightLessThan200);
+console.log(massGreaterThanThreshold);
 
-// // 3 Obtener una matriz con todos los nombres
+// 2 Obtener personajes con altura inferior a 200
+const HEIGHT_THRESHOLD = 200;
+const heightLessThanThreshold = characters.filter((c) => c.height < HEIGHT_THRESHOLD);
+
+console.log(heightLessThanThreshold);
+
+// 3 Obtener una matriz con todos los nombres
 const names = characters.map((c) => c.name);
 console.log(names);
 
-// // 4 Obtener un array de objetos con sólo las propiedades nombre y altura
+// 4 Obtener un array de objetos con sólo las propiedades nombre y altura
 const namesAndHeights = characters.map((c) => ({name: c.name, height: c.height}));
 console.log(namesAndHeights);
 
 // 5 Encontrar el primer personaje con ojos marrones.
-const firstBrownEyes = characters.find((c) => c.eye_color === 'brown');
+const EYE_COLOR_BROWN = 'brown';
+const firstBrownEyes = characters.find((c) => c.eye_color === EYE_COLOR_BROWN);
+
 console.log(firstBrownEyes);
 
 // 6 Obtener todos los personajes masculinos
@@ -69,10 +75,14 @@ const firstBlueEyesMassGreater80 = characters.find((c) => c.eye_color === 'blue'
 console.log(firstBlueEyesMassGreater80);
 
 // 12 Verificar si todos los personajes con ojos azules tienen una altura mayor a 170.
-const allBlueEyesTaller170 = characters
-.filter((c) => c.eye_color === 'blue')
-.every((c) => c.height > 170);
-console.log(allBlueEyesTaller170);
+const EYE_COLOR_BLUE = 'blue';
+const MIN_HEIGHT = 170;
+
+const allBlueEyesTallerMinHeight = characters
+.filter((c) => c.eye_color === EYE_COLOR_BLUE)
+.every((c) => c.height > MIN_HEIGHT);
+
+console.log(allBlueEyesTallerMinHeight);
 
 // Con el proyecto y por temas de trabajo externos me he atrasado un poco con las clases,
 //he aprovechando el fin de semana para verlas de nuevo y ponerme al día. 
