@@ -12,11 +12,11 @@ function temperatureInC(temperature, unit) {
     let convertedTemperature;
     
     if (unit === 'F') {
-      convertedTemperature = (temperature - 32) * 5 / 9; /* Convierte de Fahrenheit a Celsius */
+      convertedTemperature = (temperature - 32) * 5 / 9; // Convierte de Fahrenheit a Celsius
       return `${Math.round(convertedTemperature)}C`;
     } else if (unit === 'C') {
-      convertedTemperature = (temperature * 9 / 5) + 32; /* Convierte de Celsius a Fahrenheit */
-      return `${Math.round(convertedTemperature)}F`; /* Redondea al entero mas cercano */
+      convertedTemperature = (temperature * 9 / 5) + 32; // Convierte de Celsius a Fahrenheit
+      return `${Math.round(convertedTemperature)}F`; // Redondea al entero mas cercano
     }
 }
 
@@ -50,19 +50,20 @@ function getName(object) {
 const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com'); 
 console.log(person);
 console.log(getName(person));
-/*Me da un error en la linea 35 y en la linea 50, dice que no puedo redeclarar la variable 'persona',
- pero no supe como hacerlo sin juntar los ejercicios*/
+// Me da un error en la linea 35 y en la linea 50, dice que no puedo redeclarar la variable 'persona',
+// pero no supe como hacerlo sin juntar los ejercicios
 
 //Challenge `appleIndex`
-function appleIndex(array) {
-  return array.indexOf('manzana');
+function appleIndex(fruitArray) {
+  return fruitArray.indexOf('manzana');
 }
 
 console.log(appleIndex(['naranja', 'uva', 'manzana', 'plátano', 'mango']));
 
 //Challenge `isItAnApple`
-function isItAnApple(array) {
-  return array.map(element => element === 'apple');
+function isItAnApple(fruitList) {
+  return fruitList.map(element => element === 'apple');
 }
+const fruits = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango'];
 
-console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
+console.log(isItAnApple(fruits));
