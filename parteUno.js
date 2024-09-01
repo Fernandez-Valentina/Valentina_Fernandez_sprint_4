@@ -32,6 +32,7 @@ function makePersonObject(id, name, email) {
   };
 }
 const person = makePersonObject(1, 'Alguien', 'alguien@alguien.com');
+
 console.log(person);
 
 //Challenge `getName`
