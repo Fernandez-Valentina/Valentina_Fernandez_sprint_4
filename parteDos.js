@@ -31,13 +31,13 @@ const characters = [
 
 // 1 Obtener caracteres con masa superior a 100
 const MASS_THRESHOLD = 100;
-const massGreaterThanThreshold = characters.filter((c) => c.mass > MASS_THRESHOLD);
+const massGreaterThanThreshold = characters.filter((c) => Number(c.mass) > MASS_THRESHOLD);
 
 console.log(massGreaterThanThreshold);
 
 // 2 Obtener personajes con altura inferior a 200
 const HEIGHT_THRESHOLD = 200;
-const heightLessThanThreshold = characters.filter((c) => c.height < HEIGHT_THRESHOLD);
+const heightLessThanThreshold = characters.filter((c) => Number(c.height) < HEIGHT_THRESHOLD);
 
 console.log(heightLessThanThreshold);
 
@@ -64,14 +64,14 @@ const femaleCharacters = characters.filter((c) => c.gender === 'female');
 console.log(femaleCharacters);
 
 // 9 Obtener una matriz con todas las alturas
-const heights = characters.map((c) => c.height);
+const heights = characters.map((c) => Number(c.height));
 console.log(heights);
 
 // 10 Imprimir en la consola los nombres de todos los personajes.
 characters.forEach((c) => console.log(c.name));
 
 // 11 Encontrar el primer personaje que tenga ojos de color azul y que su peso sea mayor a 80
-const firstBlueEyesMassGreater80 = characters.find((c) => c.eye_color === 'blue' && c.mass > 80);
+const firstBlueEyesMassGreater80 = characters.find((c) => c.eye_color === 'blue' && Number(c.mass) > 80);
 console.log(firstBlueEyesMassGreater80);
 
 // 12 Verificar si todos los personajes con ojos azules tienen una altura mayor a 170.
@@ -85,6 +85,6 @@ const allBlueEyesTallerMinHeight = characters
 console.log(allBlueEyesTallerMinHeight);
 
 // Con el proyecto y por temas de trabajo externos me he atrasado un poco con las clases,
-//he aprovechando el fin de semana para verlas de nuevo y ponerme al día. 
+//he aprovechando el fin de semana para verlas de nuevo y ponerme mas al día con React. 
 //Intenté cumplir con las consignas de los ejercicios espero que estén bien,
 //aguardo las correcciones. Muchas gracias por todo!
