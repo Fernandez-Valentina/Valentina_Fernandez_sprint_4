@@ -74,3 +74,7 @@ const allBlueEyesTaller170 = characters
 .every((c) => c.height > 170);
 console.log(allBlueEyesTaller170);
 
+/* Con el proyecto y por temas de trabajo externos me he atrasado un poco con las clases,
+he aprovechando el fin de semana para verlas de nuevo y ponerme al día. 
+Intenté cumplir con las consignas de los ejercicios espero que estén bien,
+aguardo las correcciones. Muchas gracias por todo! */
